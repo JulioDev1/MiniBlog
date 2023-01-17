@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
+  justify-content: space-around;
+  padding: 0.5em 0.2em;
+  gap: 75rem;
+}
+.brand {
+  font-size: 1.2rem;
+}
+.brand span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.link_list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.link_list {
+  margin-right: 1rem;
+}
+
+.link_list a li {
+  padding: 0.2em 0.5em;
+}
+.active {
+  background-color: black;
+  color: white;
+}
