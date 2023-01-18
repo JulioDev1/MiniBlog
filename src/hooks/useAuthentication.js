@@ -59,13 +59,44 @@ export function useAuthentication() {
       setError(systemErrorMessage);
     }
   };
+
+  const logout = () => {
+    checkIfIsCancelled();
+    signOut(auth);
+  };
+  const login = async (data) => {
+    checkIfIsCancelled();
+
+    setLoading(true);
+    setError(false);
+
+    try {
+      await signInWithEmailAndPassword(auth, data.email, data.password);
+    } catch (error) {
+      let systemErrorMessage;
+
+      if (error.message.includes("user-not-found")) {
+        systemErrorMessage = "usuario não encontrado";
+      } else if (error.message.includes("password-wrong")) {
+        systemErrorMessage = "senha não encontrada";
+      } else {
+        systemErrorMessage = "error 404";
+      }
+      setLoading(false);
+
+      setError(systemErrorMessage);
+    }
+  };
   useEffect(() => {
     return () => setCancelled(true);
   }, []);
+
   return {
     auth,
     createUser,
     error,
     load,
+    logout,
+    login,
   };
 }

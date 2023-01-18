@@ -54,11 +54,10 @@ textarea {
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
-  width: 100px;
-  height: 20px;
+  width: 120px;
+  height: 50px;
   font-weight: bold;
   border: none;
-  padding: 10px 15px;
   font-size: 1em;
 }
 .btn.btn-dark {

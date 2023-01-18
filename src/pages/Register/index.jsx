@@ -85,6 +85,7 @@ export function Register() {
             onChange={(e) => setpasswordConfirmed(e.target.value)}
           />
         </label>
+
         {!load && <Button className="btn" textbox="Register" />}
         {load && <Button className="btn" textbox="aguarde..." disabled />}
         {error && <p className="error"> {error}</p>}

@@ -1,15 +1,7 @@
-.create_post {
+.login {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.create_post h2 {
-  font-size: 2.2em;
-}
-.create_post p {
-  color: #aaa;
-  margin-bottom: 2em;
 }
