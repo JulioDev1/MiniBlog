@@ -10,7 +10,7 @@ export function About() {
         this project consist being a blog use react in front end and firebase in
         back-end
       </p>
-      <Link to="post/create" className="btn">
+      <Link to="/create/post" className="btn">
         Criar post
       </Link>
     </div>

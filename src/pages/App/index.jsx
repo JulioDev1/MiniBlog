@@ -50,7 +50,7 @@ export function App() {
                 element={!user ? <Register /> : <Navigate />}
               />
               <Route
-                path="/create/post"
+                path="/post/create"
                 element={user ? <CreatePost /> : <Navigate path="/login" />}
               />
               <Route
