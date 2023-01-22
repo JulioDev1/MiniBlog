@@ -27,7 +27,7 @@ export function CreatePost() {
     try {
       new URL(image);
     } catch (error) {
-      setFormError("a imagem precisar de url");
+      setFormError("a imagem precisa de url");
     }
 
     const tagsArray = tags.split(",").map((tag) => tag.trim().toLowerCase());

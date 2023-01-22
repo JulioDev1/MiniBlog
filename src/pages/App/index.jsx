@@ -15,6 +15,8 @@ import { Login } from "../Login";
 import { Register } from "../Register";
 import { CreatePost } from "../CreatePost";
 import { DashBoard } from "../DashBoard";
+import { Search } from "../Search";
+import { Post } from "../Post/Index";
 
 export function App() {
   const [user, setUser] = useState(undefined);
@@ -41,6 +43,8 @@ export function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/search" element={<Search />} />
+              <Route path="/posts/:id" element={<Post />} />
               <Route
                 path="/login"
                 element={!user ? <Login /> : <Navigate path="/" />}
@@ -50,7 +54,7 @@ export function App() {
                 element={!user ? <Register /> : <Navigate />}
               />
               <Route
-                path="/post/create"
+                path="/posts/create"
                 element={user ? <CreatePost /> : <Navigate path="/login" />}
               />
               <Route

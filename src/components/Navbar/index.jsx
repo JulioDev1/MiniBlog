@@ -56,7 +56,7 @@ export function Navbar() {
           <>
             <li>
               <NavLink
-                to="/post/create"
+                to="/posts/create"
                 className={({ isActive }) => (isActive ? styles.active : "")}
               >
                 new post
