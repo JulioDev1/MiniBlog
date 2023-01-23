@@ -55,7 +55,6 @@ textarea {
   cursor: pointer;
   border-radius: 10px;
   width: 120px;
-  height: 50px;
   font-weight: bold;
   border: none;
   font-size: 1em;
@@ -78,7 +77,7 @@ textarea {
   background-color: #000;
 }
 .btn.btn-danger:hover {
-  background-color: #dc35d9;
+  background-color: #dc3535;
 }
 button[disabled] {
   background-color: #aaa;
